@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="blog," />
 
 
 
@@ -60,22 +60,23 @@
 <meta name="description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。
 前提：需在 Github 上注册！
 Github的ssh设置输入以下命令生成ssh的key，引号内是你的github邮箱，如果已经配置完成，同样跳过。
-1ssh-keygen -t rsa">
+1$ ssh-keygen -t r">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 搭建个人博客 · 基础篇">
-<meta property="og:url" content="/2016/01/21/Hexo 搭建个人博客 · 基础篇 /index.html">
+<meta property="og:title" content="Hexo 搭建个人博客">
+<meta property="og:url" content="/2014/05/16/Hexo 搭建个人博客 · 基础篇 /index.html">
 <meta property="og:site_name" content="任子丰技术博客">
 <meta property="og:description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。
 前提：需在 Github 上注册！
 Github的ssh设置输入以下命令生成ssh的key，引号内是你的github邮箱，如果已经配置完成，同样跳过。
-1ssh-keygen -t rsa">
-<meta property="og:updated_time" content="2016-01-20T07:29:48.000Z">
+1$ ssh-keygen -t r">
+<meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg">
+<meta property="og:updated_time" content="2016-01-21T08:23:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 搭建个人博客 · 基础篇">
+<meta name="twitter:title" content="Hexo 搭建个人博客">
 <meta name="twitter:description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。
 前提：需在 Github 上注册！
 Github的ssh设置输入以下命令生成ssh的key，引号内是你的github邮箱，如果已经配置完成，同样跳过。
-1ssh-keygen -t rsa">
+1$ ssh-keygen -t r">
 
 
 
@@ -93,7 +94,7 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
   };
 </script>
 
-  <title> Hexo 搭建个人博客 · 基础篇 | 任子丰技术博客 </title>
+  <title> Hexo 搭建个人博客 | 任子丰技术博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -213,7 +214,7 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
             
             
               
-                Hexo 搭建个人博客 · 基础篇
+                Hexo 搭建个人博客
               
             
           </h1>
@@ -225,8 +226,8 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-21T14:06:11+08:00" content="Jan 21 2016">
-              Jan 21 2016
+            <time itemprop="dateCreated" datetime="2014-05-16T15:30:16+08:00" content="May 16 2014">
+              May 16 2014
             </time>
           </span>
 
@@ -249,30 +250,46 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
 
       
       
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cijnzrjja0000ugod7gt9ua8t"
+                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
 
       
         <h1 id="u642D_u5EFA_u535A_u5BA2"><a href="#u642D_u5EFA_u535A_u5BA2" class="headerlink" title="搭建博客"></a>搭建博客</h1><h3 id="u6258_u7BA1_u535A_u5BA2_u5230_Github"><a href="#u6258_u7BA1_u535A_u5BA2_u5230_Github" class="headerlink" title="托管博客到 Github"></a>托管博客到 Github</h3><p>尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。</p>
 <p>前提：需在 <a href="https://github.com" target="_blank" rel="external">Github</a> 上注册！</p>
 <h4 id="Github_u7684ssh_u8BBE_u7F6E"><a href="#Github_u7684ssh_u8BBE_u7F6E" class="headerlink" title="Github的ssh设置"></a>Github的ssh设置</h4><p>输入以下命令生成ssh的key，引号内是你的github邮箱，如果已经配置完成，同样跳过。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#34;xxx@xxx.com&#8221;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"xxx@xxx.com”</span></span><br></pre></td></tr></table></figure>
 <p>如果出现以下提示，直接回车就好</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.&#10;Enter file in which to save the key (/        your_home_path/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/your_home_path/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
 <p>接着会显示一下信息，提示你输入两次密码，这个是在提交项目时输入的密码，不想设置的话可以直接回车跳过</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase): [Type a passphrase]&#10;Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ Enter passphrase (empty <span class="keyword">for</span> no passphrase): [Type a passphrase]</span><br><span class="line">$ Enter same passphrase again: [Type passphrase again]</span><br></pre></td></tr></table></figure>
 <p>最后如果出现一下信息就表示设置成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved in /&#9;your_home_path/.ssh/id_rsa.&#10;Your public key has been saved in /your_home_path/.ssh/id_rsa.pub.&#10;The key fingerprint is: 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ Your identification has been saved <span class="keyword">in</span> /your_home_path/.ssh/id_rsa.</span><br><span class="line">$ Your public key has been saved <span class="keyword">in</span> /your_home_path/.ssh/id_rsa.pub.</span><br><span class="line">$ The key fingerprint is: <span class="number">01</span>:<span class="number">0</span>f:f4:<span class="number">3</span>b:ca:<span class="number">85</span>:d6:<span class="number">17</span>:a1:<span class="number">7</span>d:f0:<span class="number">68</span>:<span class="number">9</span>d:f0:a2:db your_email@example.com</span><br></pre></td></tr></table></figure>
 <h4 id="u6DFB_u52A0SSH_key_u5230_u81EA_u5DF1_u7684Github_u4E0A"><a href="#u6DFB_u52A0SSH_key_u5230_u81EA_u5DF1_u7684Github_u4E0A" class="headerlink" title="添加SSH key到自己的Github上"></a>添加SSH key到自己的Github上</h4><p>1.在完成上一步后，会生成一个.ssh的隐藏文件，这里直接输入以下命令打开后全选复制里面的内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.ssh&#10;open -e id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>2.接着登陆github，按照以下步骤<br>&gt;<br>1,点击右上角的头像图标 Settings—-&gt;SSH keys —-&gt; add SSH keys</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh</span><br><span class="line">$ open <span class="operator">-e</span> id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>2.接着登陆github，按照以下步骤</p>
 <blockquote>
-<p>2,把刚刚复制的内容粘贴到key里，title随便填</p>
-<p>3,点击add SSH，这就完成了</p>
+<p>1,点击右上角的头像图标 Settings—-&gt;SSH keys —-&gt; add SSH keys<br>2,把刚刚复制的内容粘贴到key里，title随便填<br>3,点击add SSH，这就完成了</p>
 </blockquote>
 <p>3.本地测试，直接复制以下命令到命令行回车，不用修改下面的邮箱</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p>如果看到下面的提示，则是提醒你网站证书未验证而已，直接输入yes后回车就行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &#39;github.com (207.97.227.239)&#39; can&#39;t be established.&#10;RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.&#10;Are you sure you want to continue connecting (yes/no)?&#10;```&#9;&#10;&#10;&#26368;&#21518;&#30475;&#21040;&#20197;&#19979;&#25552;&#31034;&#65292;&#26631;&#26126;ssh&#30340;key&#35774;&#32622;&#25104;&#21151;</span><br></pre></td></tr></table></figure>
-<p>Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#10;&#26368;&#21518;&#35774;&#32622;&#19968;&#19979;&#33258;&#24049;&#30340;&#20010;&#20154;&#20449;&#24687;&#65292;&#29992;&#20110;push&#25552;&#20132;&#20869;&#23481;&#26102;&#35760;&#24405;&#25552;&#20132;&#32773;&#20449;&#24687;&#65292;&#23601;&#23436;&#25104;&#20102;&#65292;&#24341;&#21495;&#20869;&#30340;&#20869;&#23481;&#33258;&#34892;&#20462;&#25913;&#10;&#10;```&#9;&#10;git config --global user.name &#34;your user_name&#34;&#10;git config --global user.email &#34;your_email@example.com&#34;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ The authenticity of host <span class="string">'github.com (207.97.227.239)'</span> can<span class="string">'t be established.</span><br><span class="line">$ RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span><br><span class="line">$ Are you sure you want to continue connecting (yes/no)?</span><br><span class="line">```	</span><br><span class="line">最后看到以下提示，标明ssh的key设置成功</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ Hi username! You'</span>ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>最后设置一下自己的个人信息，用于push提交内容时记录提交者信息，就完成了，引号内的内容自行修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"your user_name"</span></span><br><span class="line">$ git config --global user.email <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
 <h3 id="u751F_u6210hexo_u535A_u5BA2_u6587_u4EF6"><a href="#u751F_u6210hexo_u535A_u5BA2_u6587_u4EF6" class="headerlink" title="生成hexo博客文件"></a>生成hexo博客文件</h3><p>在使用 Hexo 之前，请先安装 Node.js 以及 Git，Node.js 和 Git 都有安装包，可以到官网去下载：</p>
 <blockquote>
 <p><a href="http://www.nodejs.org/" target="_blank" rel="external">Node.js</a></p>
@@ -280,43 +297,35 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
 </blockquote>
 <p>另外说明下：因为手头只有一台 Mac，所以下面使用的命令都是在 Mac 终端的，如果使用 Windows 的话，Git 有个 Git Bash 的程序，是一个模拟的终端，可以执行一些命令。</p>
 <h4 id="u5B89_u88C5_Hexo"><a href="#u5B89_u88C5_Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>前提：必须先安装 Node.js！ 打开终端，执行命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>Hexo 安装成功之后，在任意目录新建一个子目录并切换到这个目录，这就是本地的博客目录：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &#60;folder&#62;&#10;$ cd &#60;folder&#62;&#10;$ npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>接着安装下依赖</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install&#10;npm install hexo-renderer-ejs --save&#10;npm install hexo-renderer-stylus --save&#10;npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-renderer-ejs --save</span><br><span class="line">$ npm install hexo-renderer-stylus --save</span><br><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
 <p>新建完成后，指定文件夹的目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#9500;&#9472;&#9472; _config.yml&#10;&#9500;&#9472;&#9472; package.json&#10;&#9500;&#9472;&#9472; scaffolds&#10;&#9500;&#9472;&#9472; source&#10;|   &#9500;&#9472;&#9472; _drafts&#10;|   &#9492;&#9472;&#9472; _posts&#10;&#9492;&#9472;&#9472; themes</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
 <p>接着修改hexo根目录下_config.yml文件（xxx为你的github账户名称）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:&#10;    type: git&#10;    repo: git@github.com:xxx/xxx.github.io.git&#10;    branch: master&#10;    message: &#21338;&#23458;&#36801;&#31227;&#27979;&#35797;        #&#25552;&#20132;&#30340;&#27880;&#37322;&#20869;&#23481;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">    message: 博客迁移测试        <span class="comment">#提交的注释内容</span></span><br></pre></td></tr></table></figure>
 <p>至此，本地的博客就搭建好了，是不是超简单 ^_^！<br>然后直接输入以下命令，在本地预览博文</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g   &#10;$ hexo s   // &#21551;&#21160;&#26412;&#22320;&#26381;&#21153;&#22120;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g   </span><br><span class="line">$ hexo s   // 启动本地服务器</span><br></pre></td></tr></table></figure>
 <p>然后打开浏览器，在地址栏输入：<code>localhost:4000</code>，你就可以喉嗨尚的看到你的博客了～～～</p>
 <p>如果查看没问题，直接输入以下命令提交</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
 <p>注：因为目前用npm下载的hexo是最新的3.x版本，所以在配置完yml文件，执行 hexo deploy后,可能出现 error deployer not found:github 的错误，这时候直接 cd进入生成hexo的博文目录，输入以下命令即可</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/01/21/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
+        <div class="post-tags">
+          
+            <a href="/tags/blog/" rel="tag">#blog</a>
+          
         </div>
+      
+
       
 
       
@@ -381,7 +390,7 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -395,7 +404,7 @@ Github的ssh设置输入以下命令生成ssh的key，引号内是你的github�
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>

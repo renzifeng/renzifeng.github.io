@@ -57,17 +57,17 @@
 
 
 
-<meta name="description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。">
+<meta name="description" content="搭建属于自己的博客Hexo 是一个轻量的静态博客框架。通过Hexo可以快速生成一个静态博客框架,仅需要几条命令就可以完成,相当方便。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 搭建个人博客">
 <meta property="og:url" content="/2014/05/16/Hexo 搭建个人博客 · 基础篇 /index.html">
 <meta property="og:site_name" content="任子丰技术博客">
-<meta property="og:description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。">
+<meta property="og:description" content="搭建属于自己的博客Hexo 是一个轻量的静态博客框架。通过Hexo可以快速生成一个静态博客框架,仅需要几条命令就可以完成,相当方便。">
 <meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg">
-<meta property="og:updated_time" content="2016-01-21T08:28:18.000Z">
+<meta property="og:updated_time" content="2016-01-21T08:39:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 搭建个人博客">
-<meta name="twitter:description" content="搭建博客托管博客到 Github尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。">
+<meta name="twitter:description" content="搭建属于自己的博客Hexo 是一个轻量的静态博客框架。通过Hexo可以快速生成一个静态博客框架,仅需要几条命令就可以完成,相当方便。">
 
 
 
@@ -246,7 +246,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cijnzy36z0000w7odie9nj76s"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cijo0g6aa0000yyodksmgvlj3"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -259,8 +259,28 @@
       
 
       
-        <h1 id="u642D_u5EFA_u535A_u5BA2"><a href="#u642D_u5EFA_u535A_u5BA2" class="headerlink" title="搭建博客"></a>搭建博客</h1><h3 id="u6258_u7BA1_u535A_u5BA2_u5230_Github"><a href="#u6258_u7BA1_u535A_u5BA2_u5230_Github" class="headerlink" title="托管博客到 Github"></a>托管博客到 Github</h3><p>尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。</p>
+        <h1 id="u642D_u5EFA_u5C5E_u4E8E_u81EA_u5DF1_u7684_u535A_u5BA2"><a href="#u642D_u5EFA_u5C5E_u4E8E_u81EA_u5DF1_u7684_u535A_u5BA2" class="headerlink" title="搭建属于自己的博客"></a>搭建属于自己的博客</h1><p>Hexo 是一个轻量的静态博客框架。通过Hexo可以快速生成一个静态博客框架,仅需要几条命令就可以完成,相当方便。</p>
 <a id="more"></a>
+<h3 id="u4F7F_u7528hexo_u751F_u6210_u535A_u5BA2_u6587_u4EF6"><a href="#u4F7F_u7528hexo_u751F_u6210_u535A_u5BA2_u6587_u4EF6" class="headerlink" title="使用hexo生成博客文件"></a>使用hexo生成博客文件</h3><p>在使用 Hexo 之前，请先安装 Node.js 以及 Git，Node.js 和 Git 都有安装包，可以到官网去下载：</p>
+<blockquote>
+<p><a href="http://www.nodejs.org/" target="_blank" rel="external">Node.js</a></p>
+<p><a href="http://git-scm.com" target="_blank" rel="external">Git</a></p>
+</blockquote>
+<p>另外说明下：因为手头只有一台 Mac，所以下面使用的命令都是在 Mac 终端的，如果使用 Windows 的话，Git 有个 Git Bash 的程序，是一个模拟的终端，可以执行一些命令。</p>
+<h4 id="u5B89_u88C5_Hexo"><a href="#u5B89_u88C5_Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>前提：必须先安装 Node.js！ 打开终端，执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>Hexo 安装成功之后，在任意目录新建一个子目录并切换到这个目录，这就是本地的博客目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<p>接着安装下依赖</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-renderer-ejs --save</span><br><span class="line">$ npm install hexo-renderer-stylus --save</span><br><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
+<p>新建完成后，指定文件夹的目录如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<p>接着修改hexo根目录下_config.yml文件（xxx为你的github账户名称）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">    message: 博客迁移测试        <span class="comment">#提交的注释内容</span></span><br></pre></td></tr></table></figure>
+<p>至此，本地的博客就搭建好了，是不是超简单 ^_^！<br>然后直接输入以下命令，在本地预览博文</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g   </span><br><span class="line">$ hexo s   // 启动本地服务器</span><br></pre></td></tr></table></figure>
+<p>然后打开浏览器，在地址栏输入：<code>localhost:4000</code>，你就可以喉嗨尚的看到你的博客了～～～</p>
+<h3 id="u6258_u7BA1_u535A_u5BA2_u5230_Github"><a href="#u6258_u7BA1_u535A_u5BA2_u5230_Github" class="headerlink" title="托管博客到 Github"></a>托管博客到 Github</h3><p>尽管在本来浏览器中可已访问自己的博客了，但这仅仅只是一个单机版。如果要在整个互联网上发布直接的博客，需要有服务器托管，下面介绍如果托管直接的 Hexo 博客到 Github 上。</p>
 <p>前提：需在 <a href="https://github.com" target="_blank" rel="external">Github</a> 上注册！</p>
 <h4 id="Github_u7684ssh_u8BBE_u7F6E"><a href="#Github_u7684ssh_u8BBE_u7F6E" class="headerlink" title="Github的ssh设置"></a>Github的ssh设置</h4><p>输入以下命令生成ssh的key，引号内是你的github邮箱，如果已经配置完成，同样跳过。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"xxx@xxx.com”</span></span><br></pre></td></tr></table></figure>
@@ -284,25 +304,6 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ Hi username! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
 <p>最后设置一下自己的个人信息，用于push提交内容时记录提交者信息，就完成了，引号内的内容自行修改</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"your user_name"</span></span><br><span class="line">$ git config --global user.email <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
-<h3 id="u751F_u6210hexo_u535A_u5BA2_u6587_u4EF6"><a href="#u751F_u6210hexo_u535A_u5BA2_u6587_u4EF6" class="headerlink" title="生成hexo博客文件"></a>生成hexo博客文件</h3><p>在使用 Hexo 之前，请先安装 Node.js 以及 Git，Node.js 和 Git 都有安装包，可以到官网去下载：</p>
-<blockquote>
-<p><a href="http://www.nodejs.org/" target="_blank" rel="external">Node.js</a></p>
-<p><a href="http://git-scm.com" target="_blank" rel="external">Git</a></p>
-</blockquote>
-<p>另外说明下：因为手头只有一台 Mac，所以下面使用的命令都是在 Mac 终端的，如果使用 Windows 的话，Git 有个 Git Bash 的程序，是一个模拟的终端，可以执行一些命令。</p>
-<h4 id="u5B89_u88C5_Hexo"><a href="#u5B89_u88C5_Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>前提：必须先安装 Node.js！ 打开终端，执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>Hexo 安装成功之后，在任意目录新建一个子目录并切换到这个目录，这就是本地的博客目录：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>接着安装下依赖</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line">$ npm install hexo-renderer-ejs --save</span><br><span class="line">$ npm install hexo-renderer-stylus --save</span><br><span class="line">$ npm install hexo-renderer-marked --save</span><br></pre></td></tr></table></figure>
-<p>新建完成后，指定文件夹的目录如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<p>接着修改hexo根目录下_config.yml文件（xxx为你的github账户名称）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    <span class="built_in">type</span>: git</span><br><span class="line">    repo: git@github.com:xxx/xxx.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line">    message: 博客迁移测试        <span class="comment">#提交的注释内容</span></span><br></pre></td></tr></table></figure>
-<p>至此，本地的博客就搭建好了，是不是超简单 ^_^！<br>然后直接输入以下命令，在本地预览博文</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g   </span><br><span class="line">$ hexo s   // 启动本地服务器</span><br></pre></td></tr></table></figure>
-<p>然后打开浏览器，在地址栏输入：<code>localhost:4000</code>，你就可以喉嗨尚的看到你的博客了～～～</p>
 <p>如果查看没问题，直接输入以下命令提交</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g</span><br></pre></td></tr></table></figure>
 <p>注：因为目前用npm下载的hexo是最新的3.x版本，所以在配置完yml文件，执行 hexo deploy后,可能出现 error deployer not found:github 的错误，这时候直接 cd进入生成hexo的博文目录，输入以下命令即可</p>
@@ -430,7 +431,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u642D_u5EFA_u535A_u5BA2"><span class="nav-number">1.</span> <span class="nav-text">搭建博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u6258_u7BA1_u535A_u5BA2_u5230_Github"><span class="nav-number">1.0.1.</span> <span class="nav-text">托管博客到 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Github_u7684ssh_u8BBE_u7F6E"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">Github的ssh设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6DFB_u52A0SSH_key_u5230_u81EA_u5DF1_u7684Github_u4E0A"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">添加SSH key到自己的Github上</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u751F_u6210hexo_u535A_u5BA2_u6587_u4EF6"><span class="nav-number">1.0.2.</span> <span class="nav-text">生成hexo博客文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5_Hexo"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">安装 Hexo</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u642D_u5EFA_u5C5E_u4E8E_u81EA_u5DF1_u7684_u535A_u5BA2"><span class="nav-number">1.</span> <span class="nav-text">搭建属于自己的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4F7F_u7528hexo_u751F_u6210_u535A_u5BA2_u6587_u4EF6"><span class="nav-number">1.0.1.</span> <span class="nav-text">使用hexo生成博客文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5_Hexo"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">安装 Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6258_u7BA1_u535A_u5BA2_u5230_Github"><span class="nav-number">1.0.2.</span> <span class="nav-text">托管博客到 Github</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Github_u7684ssh_u8BBE_u7F6E"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Github的ssh设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6DFB_u52A0SSH_key_u5230_u81EA_u5DF1_u7684Github_u4E0A"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">添加SSH key到自己的Github上</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
